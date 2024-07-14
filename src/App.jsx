@@ -1,5 +1,5 @@
 import myImage1 from './components/pic1.jpeg'; // New image for card 1
-import myImage2 from './components/pic.png'; // Original image for card 2
+import myImage2 from './components/pic.jpeg'; // Original image for card 2
 import myImage3 from './components/pic2.jpeg'; 
 import Cards from './components/Cards';
 

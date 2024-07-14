@@ -34,14 +34,14 @@ body {
     width: 100%;
     max-width: calc(100% - 40px); /* Ensures image does not exceed card width */
     border-radius: 0px;
-    margin-left: 40px;
-    margin-top: 180px;
+    margin-left: 20px;
+    margin-top: 160px;
   }
   .green .card-image {
     width: 255px;
     border-radius: 0px;
     margin-left: 0px;
-    margin-top: 211px;
+    margin-top: 166px;
   }
   
   /* Background color classes */

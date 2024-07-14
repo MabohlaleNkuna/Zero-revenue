@@ -17,11 +17,11 @@ function Cards({ title, message, imgSrc, cardColor, middleImage }) {
           <div className="image-container">
             <img src={imgSrc} alt="card" className="card-image" />
           </div>
-          <p>{message}</p>
+          <h2>{message}</h2>
         </>
       ) : (
         <>
-          <p>{message}</p>
+          <h2>{message}</h2>
           <div className="image-container">
             <img src={imgSrc} alt="card" className="card-image" />
           </div>
