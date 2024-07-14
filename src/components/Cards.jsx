@@ -1,14 +1,19 @@
 import './Cards.css';
 
-function Cards({ title, message, imgSrc, cardColor, order }) {
-  const checkmarkColor = cardColor === 'yellow' ? 'yellow' : cardColor === 'red' ? 'red' : 'black';
+function Cards({ title, message, imgSrc, cardColor, middleImage }) {
   return (
     <div className={`Card ${cardColor}`}>
-      {order === 'image-first' ? (
+      <div className="card-header">
+        <h1>
+          {title} <span className="checkmark"></span>
+        </h1>
+        <button className="menu-button" disabled>
+          <div className="menu-line"></div>
+          <div className="menu-line"></div>
+        </button>
+      </div>
+      {middleImage ? (
         <>
-          <h1> 
-            {title} <span className="checkmark" style={{ color: checkmarkColor }}>✔️</span>
-          </h1>
           <div className="image-container">
             <img src={imgSrc} alt="card" className="card-image" />
           </div>
@@ -16,9 +21,6 @@ function Cards({ title, message, imgSrc, cardColor, order }) {
         </>
       ) : (
         <>
-          <h1>
-            {title} <span className="checkmark" style={{ color: checkmarkColor }}>✔️</span>
-          </h1>
           <p>{message}</p>
           <div className="image-container">
             <img src={imgSrc} alt="card" className="card-image" />
