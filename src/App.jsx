@@ -7,9 +7,9 @@ function App() {
   const title = "Zero";
   return (
     <div className="App">
-      <Cards title={title} message="2.45%" imgSrc={myImage3} cardColor="red" />
-      <Cards title={title} imgSrc={myImage2} message="Danny Hazelwood" cardColor="black" middleImage />
-      <Cards title={title} message="Boost Your Earning Today." imgSrc={myImage1} cardColor="green" />
+      <Cards title={title} message="2.45%" paragraph="Average return-Value" imgSrc={myImage3} cardColor="red"  />
+      <Cards title={title} imgSrc={myImage2} message="Danny Hazelwood" cardColor="black" middleImage paragraph="Founder-Zeropay" />
+      <Cards title={title} message={ <>Boost<br /> Your Earning <br /> Today</>} paragraph={ <>Growth <br /> From 2022 <br /> Today</>} imgSrc={myImage1} cardColor="green" />
     </div>
   );
 }
