@@ -1,6 +1,6 @@
 import './Cards.css';
 
-function Cards({ title, message, imgSrc, cardColor, middleImage }) {
+function Cards({ title, message, imgSrc, cardColor, middleImage, paragraph }) {
   return (
     <div className={`Card ${cardColor}`}>
       <div className="card-header">
@@ -18,10 +18,12 @@ function Cards({ title, message, imgSrc, cardColor, middleImage }) {
             <img src={imgSrc} alt="card" className="card-image" />
           </div>
           <h2>{message}</h2>
+          <p>{paragraph}</p>
         </>
       ) : (
         <>
           <h2>{message}</h2>
+          <p>{paragraph}</p>
           <div className="image-container">
             <img src={imgSrc} alt="card" className="card-image" />
           </div>

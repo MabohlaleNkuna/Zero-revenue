@@ -41,7 +41,7 @@ body {
     width: 257px;
     border-radius: 0px;
     margin-left: 0px;
-    margin-top: 117px;
+    margin-top: 3px;
   }
   
   /* Background color classes */
@@ -57,7 +57,16 @@ body {
   .green {
     background-color: #12846C;
   }
-  
+  .green p{
+    margin-left: 125px;
+  }
+  .black p{
+    color: white;
+    margin-top: 50px;
+  }
+  .red p{
+    margin-top: -50px;
+  }
   .card-header {
     display: flex;
     justify-content: space-between;
