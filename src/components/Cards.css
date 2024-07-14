@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+.App {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .Card {
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid pink;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 50px;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 500px;
+  }
+  
+  .card-image {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 40px;
+  }
+  
+  /* Background color classes */
+  .red {
+    background-color: rgb(208, 63, 5);
+  }
+  
+  .black {
+    background-color: rgb(40, 39, 39);
+  }
+  
+  .green {
+    background-color: rgb(6, 103, 93);
+  }
+  
