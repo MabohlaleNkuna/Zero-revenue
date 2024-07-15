@@ -1,6 +1,6 @@
 import './Cards.css';
 
-function Cards({ title, message, imgSrc, cardColor, middleImage, paragraph }) {
+function Cards({ title, message, imgSrc, cardColor, middleImage, paragraph, symbol }) {
   return (
     <div className={`Card ${cardColor}`}>
       <div className="card-header">
@@ -12,6 +12,11 @@ function Cards({ title, message, imgSrc, cardColor, middleImage, paragraph }) {
           <div className="menu-line"></div>
         </button>
       </div>
+      {cardColor === 'red' && (
+        <button className="unclickable-button" disabled>
+          Revenue
+        </button>
+      )}
       {middleImage ? (
         <>
           <div className="image-container">
@@ -23,7 +28,10 @@ function Cards({ title, message, imgSrc, cardColor, middleImage, paragraph }) {
       ) : (
         <>
           <h2>{message}</h2>
-          <p>{paragraph}</p>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <span className="symbol">{symbol}</span>
+            <p>{paragraph}</p>
+          </div>
           <div className="image-container">
             <img src={imgSrc} alt="card" className="card-image" />
           </div>

@@ -5,12 +5,13 @@ body {
   .App {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
+    
   }
   
   .Card {
     flex: 1;
-    max-width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,31 +21,31 @@ body {
     border-radius: 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 500px;
+    height: 550px;
   }
   
   .card-image {
     width: 150px;
     height: 250px;
     object-fit: cover;
-    margin-top: 10px;
-    border-radius: 40px;
+    margin-top: 40px;
+    border-radius: 60px;
   }
   .red .card-image {
     width: 100%;
     max-width: calc(100% - 30px); 
     border-radius: 0px;
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 80px;
   }
   .green .card-image {
-    width: 257px;
+    width: 200px;
     border-radius: 0px;
     margin-left: 0px;
-    margin-top: 3px;
+    margin-top: 34px;
   }
   
-  /* Background color classes */
+ 
   .red {
     background-color: #F25E3D;
   }
@@ -62,7 +63,7 @@ body {
   }
   .black p{
     color: white;
-    margin-top: 50px;
+    margin-top: 80px;
   }
   .red p{
     margin-top: -50px;
@@ -124,16 +125,32 @@ body {
   }
   
   .checkmark::before {
-    content: '☑';
-    color: transparent;
+    content: '✔️';
+    color: white;
     font-size: 14px;
     border-radius: 50px;
     background-color: black;
   }
   .black .checkmark::before {
-    content: '☑';
-    color: transparent;
+    content: '✔️';
+    color: white;
     font-size: 14px;
     border-radius: 50px;
     background-color: white;
   }         
+  .unclickable-button {
+    background-color: black;
+    color: #F25E3D; 
+    padding: 1px 3px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    margin-bottom: -50px;
+    margin-top: 40px;
+    margin-left: -85px;
+     
+  }
+  .symbol {
+    font-size: 50px;
+    margin-right: -40px; 
+  }
+  
