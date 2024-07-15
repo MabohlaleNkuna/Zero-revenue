@@ -152,7 +152,7 @@ body {
   
   .checkmark::before {
     content: '✔️';
-    color: black;
+    color: white;
     font-size: 14px;
     border-radius: 50px;
     background-color: black;
