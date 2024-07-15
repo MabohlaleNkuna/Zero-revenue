@@ -3,6 +3,8 @@ import myImage2 from './components/pic.jpeg';
 import myImage3 from './components/pic2.jpeg'; 
 import Cards from './components/Cards';
 
+
+
 function App() {
   const title = "Zero";
   return (

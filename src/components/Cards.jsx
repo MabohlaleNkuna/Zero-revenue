@@ -1,11 +1,14 @@
 import './Cards.css';
+import Checkmark from './Checkmark';
 
-function Cards({ title, message, imgSrc, cardColor, middleImage, paragraph, symbol }) {
+
+function Cards({ title, message, imgSrc, cardColor, middleImage, paragraph, symbol}) {
   return (
     <div className={`Card ${cardColor}`}>
       <div className="card-header">
         <h1>
-          {title} <span className="checkmark"></span>
+          {title} <span className="checkmark">      <Checkmark />
+          </span>
         </h1>
         <button className="menu-button" disabled>
           <div className="menu-line"></div>

@@ -150,22 +150,7 @@ body {
     color: transparent;
   }
   
-  .checkmark::before {
-    content: '✔️';
-    color: white;
-    font-size: 14px;
-    border-radius: 50px;
-    background-color: black;
-  }
-  
-  .black .checkmark::before {
-    content: '✔️';
-    color: white;
-    font-size: 14px;
-    border-radius: 50px;
-    background-color: white;
-  }
-  
+
   .unclickable-button {
     background-color: black;
     color: #F25E3D;
@@ -196,4 +181,19 @@ body {
       max-width: 100%;
     }
   }
+  .checkmarkIm img {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: #353434;
+    fill: rgba(247, 247, 247, 0.945);
+  }
+  
+  .black .checkmarkIm img {
+    background-color: white;
+    fill: rgba(255, 255, 255, 0.5); 
+  }
+  
+
   
