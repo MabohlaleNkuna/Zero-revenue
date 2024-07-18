@@ -1,19 +1,14 @@
+import React from 'react';
 import './Cards.css';
 import Checkmark from './Checkmark';
 
-
-function Cards({ title, message, imgSrc, cardColor, middleImage, paragraph, symbol}) {
+function Cards({ title, message, imgSrc, cardColor, middleImage, paragraph, symbol }) {
   return (
     <div className={`Card ${cardColor}`}>
       <div className="card-header">
         <h1>
-          {title} <span className="checkmark">      <Checkmark />
-          </span>
+          {title} <span className="checkmark"><Checkmark /></span>
         </h1>
-        <button className="menu-button" disabled>
-          <div className="menu-line"></div>
-          <div className="menu-line"></div>
-        </button>
       </div>
       {cardColor === 'red' && (
         <button className="unclickable-button" disabled>
