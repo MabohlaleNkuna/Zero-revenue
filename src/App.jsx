@@ -1,6 +1,6 @@
 import myImage1 from './components/pic1.jpeg'; 
 import myImage2 from './components/pic.jpeg'; 
-import myImage3 from './components/pic2.jpeg'; 
+import myImage3 from './components/pic2.jpg'; 
 import Cards from './components/Cards';
 
 
