@@ -1,12 +1,18 @@
 // src/components/Cards.jsx
 import React from 'react';
 import './Cards.css';
+import Checkmark from './Checkmark';
 
 function Cards({ title, message, paragraph, imgSrc, cardColor, middleImage, symbol, onMenuClick }) {
   return (
     <div className={`Card ${cardColor}`}>
       <div className="card-header">
-        <h1>{title}</h1>
+        <h1>
+          {title}
+          <span className="checkmark">
+            <Checkmark />
+          </span>
+        </h1>
         <button className="menu-button" onClick={onMenuClick}>
           <div className="menu-line"></div>
           <div className="menu-line"></div>

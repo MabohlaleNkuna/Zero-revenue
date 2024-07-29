@@ -18,16 +18,16 @@ body, html {
 }
 
 .Card {
-  width: 70%;
+  width: 500px;
   max-width: 800px;
-  height: auto;
+  height: 100vh;
   background-color: white;
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 20px;
   box-sizing: border-box;
 }
+
 .red {
   background-color: #F25E3D;
 }
@@ -40,11 +40,11 @@ body, html {
   background-color: #12846C;
 }
 
-.black h2 {
+.black .card-header h1 {
   color: white;
 }
 
-.black .card-header h1 {
+.black h2, .black p, .black .card-header h1 {
   color: white;
 }
 
@@ -65,8 +65,20 @@ body, html {
   margin-bottom: 20px;
 }
 
+.card-header h1 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.checkmark {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
 .menu-button {
-  background-color: pink;
+  background-color: transparent;
   border: none;
   display: flex;
   flex-direction: column;
@@ -92,19 +104,18 @@ body, html {
 .black .menu-button:hover .menu-line {
   background-color: #F25E3D;
 }
+
 .green p {
   margin-left: 125px;
 }
 
 .black p {
-  color: white;
   margin-top: 80px;
 }
 
 .red p {
   margin-top: -50px;
 }
-
 
 .image-container {
   display: flex;
@@ -115,11 +126,28 @@ body, html {
 
 .card-image {
   width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
+  max-width: 500px;
+}
+
+.green .card-image {
+  width: 500px;
 }
 
 .symbol {
   font-size: 24px;
   margin-right: 10px;
+}
+
+.checkmarkIm img {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 50px;
+  background-color: #353434;
+  fill: rgba(247, 247, 247, 0.945);
+}
+
+.black .checkmarkIm img {
+  background-color: white;
+  fill: rgba(255, 255, 255, 0.5);
 }

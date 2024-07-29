@@ -5,7 +5,6 @@ import myImage1 from './components/pic1.jpeg';
 import myImage2 from './components/pic.jpeg';
 import myImage3 from './components/pic2.jpeg';
 
-
 function App() {
   const [currentCard, setCurrentCard] = useState(0);
 
