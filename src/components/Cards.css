@@ -131,6 +131,15 @@ body, html {
 
 .green .card-image {
   width: 500px;
+  margin-top: 300px;
+}
+.red .card-image {
+  width: 500px;
+  margin-top: 200px;
+}
+.black .card-image {
+  width: 300px;
+  margin-top: 100px;
 }
 
 .symbol {
