@@ -19,7 +19,7 @@ Follow these steps to set up and run the project:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/ui-challenge.git
+    git clone https://github.com/MabohlaleNkuna/React-UI-challenge.git
     ```
 
 2. Navigate into the project directory:
