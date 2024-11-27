@@ -1,0 +1,669 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  html,
+  #root,
+  .App {
+    height: 100%;
+  }
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  #root {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .App {
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+  }
+  
+  .nav {
+    padding: 20px 0px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Main {
+    grid-row-start: 2;
+    grid-row-end: 6;
+  
+    /* background-color: yellowgreen;*/
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  
+  .logo span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 5px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .nav-buttons-menu {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  
+  .log-start {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .log-in {
+    border: 1px solid black;
+    padding: 7px 22px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+  
+    font-weight: bold;
+    background-color: #ffffff;
+  }
+  
+  .log-in:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .start {
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 7px 22px;
+    border-radius: 40px;
+  }
+  
+  .start:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+  }
+  
+  .burger {
+    margin: 5px 0px 5px 20px;
+  }
+  
+  .burger div {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0;
+  }
+  
+  .Intro {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    text-align: center;
+    padding: 10px;
+    margin: 50px 25px 25px 25px;
+  }
+  
+  .intro-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 55px;
+  }
+  
+  .intro-text {
+    font-size: 1.4rem;
+    margin: 20px;
+  }
+  
+  .Email {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  
+    margin: 20px 20px 27px 20px;
+  }
+  
+  
+  .input-email {
+    border: 1px solid black;
+    border-radius: 40px;
+    position: relative;
+  }
+  
+  .Email input[type="email"] {
+    border: 1px solid black;
+  
+    padding: 16px 90px 16px 50px;
+    margin: 0px;
+    border-radius: 40px;
+    border: none;
+  }
+  
+  .Email input[type="email"]::placeholder {
+  
+    text-align: start;
+    color: black;
+    font-size: 0.970rem;
+    font-weight: bolder;
+  }
+  
+  .Email input[type="submit"] {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 14px 35px;
+    border-radius: 40px;
+  
+    background-color: black;
+    color: white;
+    border: none;
+  }
+  
+  .Email input[type="submit"]:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+  }
+  
+  .featured-plans {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .featured-headings {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }
+  
+  .featured-headings h2 {
+    font-weight: bold;
+  }
+  
+  .featured-headings div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    height: auto;
+    margin-bottom: 35px;
+  }
+  
+  .Plan {
+    flex: 25%;
+  
+    padding: 15px 25px;
+  
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .category {
+    font-size: 0.7rem;
+    color: rgb(106, 106, 106);
+  }
+  
+  .black .category {
+    color: #969696;
+  }
+  .heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 8px 0px;
+  
+    padding: 0px;
+  }
+  
+  .info {
+    font-size: 0.7rem;
+  }
+  .line {
+    height: 1px;
+    background-color: #6f6f6f;
+    margin: 15px 0px;
+  }
+  .year {
+    font-size: 0.8rem;
+    color: rgb(73, 73, 73);
+  }
+  
+  .percent {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  
+    color: #202020;
+  }
+  
+  .black .percent {
+    color: white;
+  }
+  
+  .black .year {
+    color: #969696;
+  }
+  
+  .arrow {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 7px;
+  }
+  
+  .lime {
+    background-color: #5ecca0;
+  }
+  
+  .lime .arrow {
+    background-color: #0d0d0d;
+    color: white;
+  }
+  
+  .black {
+    background-color: #0d0d0d;
+    color: white;
+  }
+  
+  .violet {
+    background-color: #cb9bfb;
+  }
+  
+  .violet .arrow {
+    background-color: #0d0d0d;
+    color: white;
+  }
+  
+  .black .arrow {
+    background-color: white;
+    color: #0d0d0d;
+  }
+  
+  .yellow {
+    background-color: #fbfb93;
+  }
+  
+  .yellow .arrow {
+    background-color: #0d0d0d;
+    color: white;
+  }
+  
+  .arrow:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+  }
+  
+  .black .arrow:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .Footer {
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+  }
+  
+  .terms-customer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+  
+    font-size: 1.3rem;
+    margin: 0px;
+  }
+  .circle {
+    height: 5px;
+    width: 5px;
+    background-color: #0d0d0d;
+    border-radius: 50%;
+  }
+  
+  .footer-arrow {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 7px 10px;
+    border: 1px solid black;
+  }
+  
+  .footer-arrow:hover {
+    background-color: black;
+  
+    color: white;
+  }
+  
+  @media screen and (min-width: 1921px) and (max-width: 2560px) {
+    .logo {
+      font-size: 2.8rem;
+    }
+    .nav-buttons-menu {
+      font-size: 2rem;
+    }
+    .Intro {
+      padding: 20px;
+      margin: 100px 25px 25px 25px;
+    }
+  
+    .intro-heading {
+      font-size: 8rem;
+      font-weight: bold;
+      margin: 0px;
+      line-height: normal;
+    }
+  
+    .log-in,
+    .start {
+      font-size: 1.7rem;
+      padding: 20px 45px;
+    }
+  
+    .intro-text {
+      font-size: 3rem;
+    }
+  
+    .Email input[type="email"] {
+      padding: 25px 145px;
+      font-size: 1.3rem;
+    }
+  
+    .Email input[type="submit"] {
+      padding: 15px 50px;
+      font-size: 1.3rem;
+    }
+  
+    .send-icon {
+      padding-top: 10px;
+      padding-right: 15px;
+      font-size: 4rem;
+    }
+  
+    .featured-headings {
+      font-size: 2rem;
+    }
+  
+    .plans {
+      gap: 27px;
+    }
+  
+    .Plan {
+      flex: 25%;
+  
+      padding: 80px 40px;
+  
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  
+    .category {
+      font-size: 1.4rem;
+    }
+  
+    .heading {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 15px 0px;
+  
+      padding: 0px;
+    }
+  
+    .info {
+      font-size: 1.4rem;
+    }
+    .line {
+      height: 0.4px;
+      background-color: #6f6f6f;
+      margin: 20px 0px;
+    }
+    .year {
+      font-size: 1.8rem;
+      margin: 15px 0px 5px 0px;
+    }
+  
+    .percent {
+      font-size: 4rem;
+      margin: 20px 0px;
+    }
+  
+    .arrow {
+      padding: 7px 25px;
+    }
+  
+    .Footer {
+      padding: 5px 0px;
+      margin: 0px;
+    }
+  
+    .terms-customer {
+      margin: 0px;
+      padding: 0px;
+      font-size: 3rem;
+    }
+  
+    .footer-arrow {
+      padding: 30px 30px;
+      border-radius: 30px;
+    }
+  }
+  
+  @media (min-width: 1441px) and (max-width: 1920px) {
+    .plans {
+      gap: 15px;
+    }
+  
+    .Plan {
+      padding: 35px 35px;
+    }
+  
+    .category {
+      font-size: 0.8rem;
+    }
+  
+    .heading {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 8px 0px;
+  
+      padding: 0px;
+    }
+  
+    .info {
+      font-size: 1.1rem;
+    }
+    .line {
+      height: 1px;
+      background-color: #6f6f6f;
+      margin: 22px 0px;
+    }
+    .year {
+      font-size: 1.2rem;
+    }
+  
+    .percent {
+      font-size: 2.4rem;
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .plans {
+      gap: 25px;
+    }
+  
+    .Plan {
+      padding: 30px 30px;
+    }
+  
+    .category {
+      font-size: 0.9rem;
+    }
+  
+    .heading {
+      font-size: 1.8rem;
+  
+      margin: 8px 0px;
+  
+      padding: 0px;
+    }
+  
+    .info {
+      font-size: 1.02rem;
+    }
+    .line {
+      height: 1px;
+  
+      margin: 30px 0px;
+    }
+    .year {
+      font-size: 1rem;
+    }
+  
+    .percent {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (min-width: 1020px) and (max-width: 1024px) {
+    .Main {
+      padding: 0px;
+      margin: 0px;
+    }
+    .plans {
+      padding: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .plans {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      height: auto;
+    }
+  
+    .Plan {
+      width: 50%;
+    }
+  
+    .nav {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .nav-buttons-menu {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .log-start {
+      gap: 10px;
+    }
+  
+    .start {
+      margin: 0px;
+    }
+  
+    .log-in,
+    .start {
+      padding: 10px 25px;
+    }
+  }
+  
+  @media screen and (min-width: 426px) and (max-width: 480px) {
+    body {
+      padding: 0px;
+    }
+  
+    .Main,
+    .Footer {
+      padding: 0px 25px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    body {
+      padding: 0px;
+    }
+  
+    .plans {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      height: auto;
+    }
+  
+    .Plan {
+      width: 50%;
+    }
+  
+    .Main,
+    .Footer {
+      padding: 0px 25px;
+    }
+  
+    .nav-buttons-menu {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .log-start {
+      gap: 10px;
+    }
+  
+    .start {
+      margin: 0px;
+    }
+  
+    .log-in,
+    .start {
+      padding: 10px 25px;
+    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 325px) {
+    body {
+      padding: 0px;
+    }
+  
+    .plans {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      gap: 20px;
+      height: auto;
+    }
+  
+    .Plan {
+      width: 90%;
+    }
+  }
