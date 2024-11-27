@@ -1,7 +1,7 @@
-import { IoMdArrowForward } from "react-icons/io";
+import Cards from "./Cards";
 
-function PlansSection() {
-  const plansData = [
+function CardsSection() {
+  const cardsData = [
     {
       color: "lime",
       category: "STRATEGY",
@@ -42,25 +42,9 @@ function PlansSection() {
         <h2>Featured Plans</h2>
         <h3>Explore All</h3>
       </div>
-      <div className="plans">
-        {plansData.map((plan, i) => (
-          <div key={i} className={`Plan ${plan.color}`}>
-            <div className="category">{plan.category}</div>
-            <div className="heading">{plan.heading}</div>
-            <div className="info">{plan.info}</div>
-            <div className="line"></div>
-            <div className="year">{plan.year}</div>
-            <div className="percent">
-              <div>{plan.percent}</div>
-              <div className="arrow">
-                <IoMdArrowForward style={{ fontSize: "1.6rem" }} />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Cards cardsData={cardsData} />
     </div>
   );
 }
 
-export default PlansSection;
+export default CardsSection;

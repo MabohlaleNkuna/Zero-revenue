@@ -1,7 +1,7 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import IntroEmail from "./components/IntroEmail";
-import PlansSection from "./components/PlansSection"; // Corrected import
+import CardsSection from "./components/CardsSection";
 import BottomPart from "./components/BottomPart";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <NavBar />
       <IntroEmail />
-      <PlansSection />
+      <CardsSection />
       <BottomPart />
     </div>
   );
