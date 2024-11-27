@@ -1,6 +1,6 @@
 import { IoMdArrowForward } from "react-icons/io";
 
-function FooterSection() {
+function  BottomPart() {
   return (
     <div className="Footer">
       <hr />
@@ -18,4 +18,4 @@ function FooterSection() {
   );
 }
 
-export default FooterSection;
+export default BottomPart;
